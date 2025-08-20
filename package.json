@@ -1,0 +1,43 @@
+{
+	"name": "automatic-sniffle",
+	"version": "0.1.0",
+	"private": true,
+	"scripts": {
+		"dev": "next dev -p 3000",
+		"build": "next build",
+		"start": "next start -p 3000",
+		"lint": "next lint",
+		"prisma:generate": "prisma generate",
+		"prisma:migrate": "prisma migrate dev --name init",
+		"prisma:studio": "prisma studio",
+		"seed": "tsx prisma/seed.ts"
+	},
+	"dependencies": {
+		"@hookform/resolvers": "^3.9.0",
+		"@prisma/client": "^5.19.1",
+		"@radix-ui/react-slot": "^1.2.3",
+		"autoprefixer": "^10.4.20",
+		"class-variance-authority": "^0.7.1",
+		"clsx": "^2.1.1",
+		"lucide-react": "^0.469.0",
+		"next": "^14.2.5",
+		"postcss": "^8.4.41",
+		"react": "^18.3.1",
+		"react-dom": "^18.3.1",
+		"react-hook-form": "^7.53.0",
+		"tailwind-merge": "^2.5.2",
+		"tailwindcss": "^3.4.10",
+		"tailwindcss-animate": "^1.0.7",
+		"zod": "^3.23.8"
+	},
+	"devDependencies": {
+		"@types/node": "^20.14.11",
+		"@types/react": "^18.3.5",
+		"@types/react-dom": "^18.3.0",
+		"eslint": "^8.57.0",
+		"eslint-config-next": "^14.2.5",
+		"prisma": "^5.19.1",
+		"tsx": "^4.19.1",
+		"typescript": "^5.5.4"
+	}
+}
